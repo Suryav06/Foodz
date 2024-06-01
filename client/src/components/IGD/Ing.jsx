@@ -80,7 +80,7 @@ function Ing() {
       const token = sessionStorage.getItem('token');
       const userEmail = sessionStorage.getItem('userEmail');
       try {
-        await axios.post('http://localhost:4000/bookmarks', {
+        await axios.post('https://foodz-hma3.onrender.com/bookmarks', {
           title: recipe.title,
           image: recipe.image,
           ingredients: recipe.extendedIngredients.map((ing) => ing.name),
