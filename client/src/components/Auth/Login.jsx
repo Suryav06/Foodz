@@ -26,7 +26,7 @@ function Login() {
         setLoading(true);
         setError(null);
         try {
-            const response = await axios.post('http://localhost:4000/login', {
+            const response = await axios.post('https://foodz-hma3.onrender.com/login', {
                 email: formData.email,
                 password: formData.password,
             });
