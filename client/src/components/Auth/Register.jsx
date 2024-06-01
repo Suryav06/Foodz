@@ -28,7 +28,7 @@ function Register() {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:4000/register', {
+      const response = await axios.post('https://foodz-hma3.onrender.com/register', {
         name: formData.name,
         email: formData.email,
         password: formData.password,
