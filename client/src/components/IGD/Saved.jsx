@@ -15,7 +15,7 @@ function Saved() {
           setLoading(false);
           return;
         }
-        const response = await axios.get('http://localhost:4000/savedRecipes', {
+        const response = await axios.get('https://foodz-hma3.onrender.com/savedRecipes', {
           params: {
             email: userEmail
           }
