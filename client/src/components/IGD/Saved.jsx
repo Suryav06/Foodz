@@ -33,7 +33,7 @@ function Saved() {
 
   const handleRemove = async (id) => {
     try {
-      await axios.delete(`http://localhost:4000/savedRecipes/${id}`);
+      await axios.delete(`https://foodz-hma3.onrender.com/savedRecipes/${id}`);
       setSavedRecipes(savedRecipes.filter(recipe => recipe._id !== id));
     } catch (error) {
       console.error('Error removing saved recipe:', error);
